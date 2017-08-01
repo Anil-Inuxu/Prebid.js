@@ -1,6 +1,6 @@
 import {ajax} from 'src/ajax';
 import adaptermanager from 'src/adaptermanager';
-import { getConfig } from 'src/config';
+const getConfig = $$PREBID_GLOBAL$$.getConfig;
 
 const bidmanager = require('src/bidmanager.js');
 const bidfactory = require('src/bidfactory.js');

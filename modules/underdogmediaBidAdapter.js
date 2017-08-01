@@ -3,7 +3,7 @@ var bidmanager = require('src/bidmanager.js');
 var adloader = require('src/adloader.js');
 var utils = require('src/utils.js');
 var adaptermanager = require('src/adaptermanager');
-var { getConfig } = require('src/config');
+const getConfig = $$PREBID_GLOBAL$$.getConfig;
 
 function UnderdogMediaAdapter() {
   const UDM_ADAPTER_VERSION = '1.0.0';

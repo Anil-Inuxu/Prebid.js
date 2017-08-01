@@ -4,7 +4,7 @@ const adloader = require('src/adloader');
 const CONSTANTS = require('src/constants.json');
 const utils = require('src/utils.js');
 const adaptermanager = require('src/adaptermanager');
-const { getConfig } = require('src/config');
+const getConfig = $$PREBID_GLOBAL$$.getConfig;
 
 const OpenxAdapter = function OpenxAdapter() {
   const BIDDER_CODE = 'openx';

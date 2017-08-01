@@ -1,5 +1,6 @@
 import { excpet } from 'chai';
-import { getConfig, setConfig } from 'src/config';
+const getConfig = $$PREBID_GLOBAL$$.getConfig;
+const setConfig = $$PREBID_GLOBAL$$.setConfig;
 
 let subscribers = [];
 function resetConfig() {

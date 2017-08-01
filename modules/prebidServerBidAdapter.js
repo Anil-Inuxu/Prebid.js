@@ -6,7 +6,7 @@ import { ajax } from 'src/ajax';
 import { STATUS, S2S } from 'src/constants';
 import { queueSync, cookieSet } from 'src/cookie';
 import adaptermanager from 'src/adaptermanager';
-import { getConfig } from 'src/config';
+const getConfig = $$PREBID_GLOBAL$$.getConfig;
 
 const TYPE = S2S.SRC;
 const cookieSetUrl = 'https://acdn.adnxs.com/cookieset/cs.js';

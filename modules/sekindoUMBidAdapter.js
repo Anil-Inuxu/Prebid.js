@@ -6,7 +6,7 @@ var bidfactory = require('src/bidfactory.js');
 var bidmanager = require('src/bidmanager.js');
 var adloader = require('src/adloader.js');
 var adaptermanager = require('src/adaptermanager');
-var { getConfig } = require('src/config');
+const getConfig = $$PREBID_GLOBAL$$.getConfig;
 
 function SekindoUMAdapter() {
   function _callBids(params) {

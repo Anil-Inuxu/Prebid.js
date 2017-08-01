@@ -1,5 +1,6 @@
 var CONSTANTS = require('./constants');
-const { getConfig, setConfig } = require('./config');
+const getConfig = $$PREBID_GLOBAL$$.getConfig;
+const setConfig = $$PREBID_GLOBAL$$.setConfig;
 
 var _loggingChecked = false;
 

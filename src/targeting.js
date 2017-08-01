@@ -2,7 +2,7 @@ import { uniques, isGptPubadsDefined, getHighestCpm, adUnitsFilter } from './uti
 import { NATIVE_TARGETING_KEYS } from './native';
 const bidmanager = require('./bidmanager');
 const utils = require('./utils');
-const { getConfig } = require('./config');
+const getConfig = $$PREBID_GLOBAL$$.getConfig;
 var CONSTANTS = require('./constants');
 
 var targeting = exports;
